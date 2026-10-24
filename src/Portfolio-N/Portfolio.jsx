@@ -12,29 +12,7 @@ const Portfolio = ({ ref4 }) => {
     AOS.init();
   }, []);
   const data = [
-    {
-      id: 1,
-      name: "3 day official valorant event - Riot Games",
-      desc: 'Engineered a custom bot for seamless organization of the 3-day official Valorant event - " The Northern Showdown"',
-      live: "https://playvalorant.com/en-gb/northern-showdown/",
-      img: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt94abc0b40f198340/64c7935461d28745ee85692f/nt_keyart.jpg",
-    },
-    {
-      id: 2,
-      name: "Matchmaking Queue Bot - Battle for GioStone",
-      desc: "Developed a Discord bot to custom-create in-house queues, a wager system and challenges for the battles of GioStone.",
-      live: "https://battleforgiostone.com/",
-      discord: "https://discord.com/invite/bfgiostone",
-      img: "https://i.ytimg.com/vi/5iEYSI-s0JY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCd4DsIYxjKsTVHqS61nO3A7NcsKg",
-    },
-    {
-      id: 3,
-      name: "Queue Bot - InHouseQueue",
-      desc: `Built a discord bot to streamline game organisation within communities by providing automated features including leaderboards, a matchmaking algorithm using Microsoft's TrueSkill, and more.`,
-      live: "https://inhousequeue.xyz/",
-      img: "https://i.imgur.com/3jaMxvS.png",
-      discord: "https://discord.gg/VgKhPtZGDQ",
-    },
+  ];
     // {
     //   id: 4,
     //   name: "InHouse Queue Bot - Turbosmurfs",
@@ -86,58 +64,14 @@ const Portfolio = ({ ref4 }) => {
   const dataP = [
     {
       id: 1,
-      name: "Tata Silver ETF Predictor",
-      desc: "Predictive tool for Tata Silver ETF built with React and Vite. Leverages data analysis to forecast trends and assist with investment insights.",
-      live: "https://github.com/aditydavvv/tata-etf-predictor",
-      github: "https://github.com/aditydavvv/tata-etf-predictor",
-      img: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      id: 2,
-      name: "Cohort",
-      desc: "Web application project built as part of cohort work.",
-      live: "https://github.com/aditydavvv/cohort",
-      github: "https://github.com/aditydavvv/cohort",
-      img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      id: 3,
-      name: "DSA Practice",
-      desc: "Data structures and algorithms practice repository.",
-      live: "https://github.com/aditydavvv/dsa-prac",
-      github: "https://github.com/aditydavvv/dsa-prac",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "More projects coming soon",
+      desc: "Currently building and will update this section with new projects.",
+      live: "https://github.com/aditydavvv",
+      github: "https://github.com/aditydavvv",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
   const dataTestimonials = [
-    {
-      id: 1,
-      name: "Henry Koleoso - InHouseQueue",
-      desc: `"Extreme young talent - I had a very ambitious project that I wanted to complete. Aarno delivered, and more. Within a week.
-
-      Apart from his brilliant programming knowledge and talent, his attention to detail and creativity during the entire process stood out to me the most. 
-      
-      A true master of his craft. Will be working with you again soon. Highly recommend."`,
-      live: "https://inhousequeue.xyz/",
-      img: "https://i.imgur.com/3jaMxvS.png",
-      linkedin: "https://www.linkedin.com/in/henrykoleoso/"
-    },
-    {
-      id: 2,
-      name: "Leon Muench - nexalink",
-      desc: `"I've been working closely with Aarno for the past quarter on our public Discord bot project, and I wholeheartedly recommend him. Aarno is exceptionally proficient in Python, discord.py, and API development. His contributions to our main code base have been outstanding, showcasing his technical prowess and commitment to delivering high-quality results. What sets Aarno apart is not just his technical skills but also his clear communication and dedication to project goals. He consistently meets deadlines and maintains a high level of professionalism. In summary, Aarno is a skilled and dedicated developer whom I look forward to continuing working with."`,
-      live: "https://www.linkedin.com/company/nexalinkdiscord/",
-      img: "https://i.imgur.com/j49BXxK.png",
-      linkedin: "https://www.linkedin.com/in/leon-m%C3%BCnch-6316541b2/"
-    },
-    
-    {
-      id: 3,
-      name: "Maxime - Turbosmurfs",
-      desc: `"Aarno is a talented and efficient coder that manages to get your projects done swiftly. I highly recommend his services for a serious professional work with great communication. I am personally very pleased by the Discord bot he and his partner made for me."`,
-      live: "https://turbosmurfs.gg/",
-      img: "https://i.imgur.com/m2aF76q.png",
-    }
   ];
 
   return (

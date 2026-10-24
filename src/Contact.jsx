@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaDiscord } from "react-icons/fa";
 import { useState } from "react";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -58,7 +58,7 @@ const Contact = ({ ref5 }) => {
               <h4>LinkedIn</h4>
               <h5>Aditya Yadav</h5>
               <a
-                href="https://www.linkedin.com/in/aditya-yadav"
+                href="https://www.linkedin.com/in/aditya-yadav-a0a61232b"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -76,7 +76,6 @@ const Contact = ({ ref5 }) => {
               >
                 send a message
               </a>
-            </article>
             </article>
           </div>
           {/* <form className="contact_form" data-aos="zoom-in">

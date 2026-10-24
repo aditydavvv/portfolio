@@ -5,7 +5,7 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import { FaHackerrank } from "react-icons/fa";
 import { SiCodechef } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
-import me from "./img/profile.svg";
+import me from "./img/profile.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +24,7 @@ const Eabout = ({ ref2 }) => {
           <div id="about">
             <div className="my_profile" data-aos="zoom-in">
               <div className="me">
-                <img src="https://i.imgur.com/VjWHiDT.png" alt="" />
+                <img src={me} alt="Aditya Yadav" />
               </div>
             </div>
             <div className="about_left" data-aos="zoom-in">
@@ -47,8 +47,8 @@ const Eabout = ({ ref2 }) => {
               </div>
               <div className="about_desc">
                 <p>
-                Welcome to my corner of the web! As a seasoned Python developer with over two years of experience and a track record of 60+ projects, my code fuels businesses ranging from startups to tech giants like Riot Games. Committed to tackling intricate challenges, I specialize in delivering ingenious and efficient solutions that elevate your projects. <br/>
-                <br/>Let's collaborate and turn your vision into reality.
+                I'm Aditya Yadav, a software developer focused on building clean, efficient web applications. I enjoy turning ideas into functional, user-friendly solutions. <br/>
+                <br/>Let's connect and build something great together.
                 </p>
               </div>
               <a href="#contact">
