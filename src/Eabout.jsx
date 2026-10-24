@@ -5,7 +5,7 @@ import { VscFolderLibrary } from "react-icons/vsc";
 import { FaHackerrank } from "react-icons/fa";
 import { SiCodechef } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
-import me from "./img/profile.jpg";
+import me from "./img/profile.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
