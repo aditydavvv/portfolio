@@ -1,0 +1,41 @@
+name: Deploy Staging
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+env:
+  REPO_NAME: ${{ github.event.repository.name }}
+  REPO_OWNER: ${{ github.repository_owner }}
+  WORKING_DIR: /var/www/aarno.dev/
+jobs:
+  push:
+    name: Pull & Build
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - name: Tag latest
+        uses: appleboy/ssh-action@dce9d565de8d876c11d93fa4fe677c0285a66d78
+        with:
+          host: ${{ secrets.IP }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            cd ${{ env.WORKING_DIR }}
+            git pull
+            npm run build
+
+
+  run:
+    name: Restart NGINX
+    needs: [push]
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - name: Run systemctl
+        uses: appleboy/ssh-action@dce9d565de8d876c11d93fa4fe677c0285a66d78
+        with:
+          host: ${{ secrets.IP }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            systemctl restart nginx
