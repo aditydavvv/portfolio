@@ -11,56 +11,8 @@ const Portfolio = ({ ref4 }) => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const data = [
-  ];
-    // {
-    //   id: 4,
-    //   name: "InHouse Queue Bot - Turbosmurfs",
-    //   desc: "Built a discord bot to organize queues, used Riot API for automated tournament generation along with webhook creation for callback & to fetch player statistics.",
-    //   live: "https://turbosmurfs.gg/",
-    //   discord: "https://discord.gg/turbosmurfsgg",
-    //   img: "https://i.imgur.com/m2aF76q.png",
-    // },
-    {
-      id: 4,
-      name: "Top Tier Signals",
-      desc: `Developed a Discord bot to calculate and showcase profits from crypto and stock trades, utilizing the "Top Tier Signals" trading algorithm for decision-making.`,
-      live: "https://whop.com/marketplace/top-tier-signals/",
-      discord: "https://discord.gg/toptiersignals",
-      img: "https://i.imgur.com/5d0Tpfq.jpg",
-    },
-    {
-      id: 5,
-      name: "Discord Security Bot - nexalink",
-      desc: 'Built a security bot that consisted of real-time threat detection, captcha verification, etc. for discord. Also, created an API for utilization in web dashboard.',
-      live: "https://www.linkedin.com/company/nexalinkdiscord/",
-      img: "https://i.imgur.com/j49BXxK.png",
-    },
-    {
-      id: 6,
-      name: "Discord-Zendesk Connector - Gamee",
-      desc: `Developed a program that enabled support agents to efficiently read and respond to Discord-generated tickets via Zendesk.`,
-      live: "https://www.gamee.com/",
-      discord: "https://discord.gg/gamee",
-      img: "https://i.imgur.com/LBkhRZY.jpg",
-    },
-    {
-      id: 7,
-      name: "Schedular System - Sneaker News",
-      desc: "Developed a bot for scheduling recurring or non-recurring notifications for their discord community.",
-      live: "https://sneakernews.com/",
-      github: "https://github.com/DorianAarno/SchedulerBot",
-      img: "https://i.imgur.com/VRfVhnt.png",
-    },
-    {
-      id: 8,
-      name: "Custom Economy Bot - MetaGoons",
-      desc: "Developed an economy bot for a discord server that allowed user-score tracking. It consisted of leaderboard and shops for virtual purchases.",
-      live: "https://metagoons.gg/",
-      github: "https://github.com/DorianAarno/PointsBot",
-      img: "https://freight.cargo.site/i/1a2754e5b6c0e31442af95a7e913ff0bb45c49e90665da946d601457464d93ae/Metagoons_Thumb.jpg",
-    },
-  ];
+  const data = [];
+
   const dataP = [
     {
       id: 1,
